@@ -9,6 +9,9 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+
+page "/josh", :layout => "josh"
+
 activate :directory_indexes
 
 activate :relative_assets

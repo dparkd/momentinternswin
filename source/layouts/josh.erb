@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,600' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/0bc7d2516e.js"></script>
+
+    <%= stylesheet_link_tag :josh %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <%= javascript_include_tag 'moment.min', :josh %>
+  </body>
+</html>
