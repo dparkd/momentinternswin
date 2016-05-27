@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import "normalize";
+@import "skeleton";
+@import "index";
+
+@font-face {
+  font-family: Circular;
+  src: url(../fonts/CircularStd-Book.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: CircularMedium;
+  src: url(../fonts/CircularStd-Medium.otf);
+  font-weight: 400;
+}
+

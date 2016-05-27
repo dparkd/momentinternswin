@@ -1,0 +1,106 @@
+@mixin animation($time) {
+  -webkit-transition: $time all cubic-bezier(0, 1, 0.5, 1);
+  -moz-transition: $time all cubic-bezier(0, 1, 0.5, 1);
+  transition: $time all cubic-bezier(0, 1, 0.5, 1); 
+}
+
+$break-small: 480px;
+
+body {
+	text-rendering: geometricPrecision;
+	background-color: #ecf0f1;
+
+	@include animation(0.5s);
+}
+
+.header {
+	max-width: 1400px;
+	padding: 50px;
+	background: white;
+	padding-top: 100px;
+	font-family: 'Source Code Pro', sans-serif;	
+
+	@media screen and (max-width: $break-small) {
+		padding-top: 50px;
+	}
+
+	h4 {
+		color: #949A9C;
+		font-size: 1em;
+		font-weight: 400;
+	}
+
+	@media screen and (max-width: $break-small) {
+		max-width: 100%;
+		width: 100%; 
+		margin: 0;
+	}	
+}
+
+.project {
+	margin: 50px 0;
+	padding: 20px 0;
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+
+	h1 {
+		font-size: 1.4em;
+		padding-top: 10px;
+		margin-bottom: 0;
+		color: #333;
+		@media screen and (max-width: $break-small) {
+			padding-top: 0;
+			margin-bottom: 30px;
+		}
+	}
+
+	.subtitle {
+		font-size: 1em;
+		color: #949A9C;
+	}
+
+
+	a {
+		color: #333;
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
