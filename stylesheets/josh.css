@@ -988,65 +988,6 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
-/* line 9, _index.scss */
-body {
-  text-rendering: geometricPrecision;
-  background-color: #ecf0f1;
-  -webkit-transition: 0.5s all cubic-bezier(0, 1, 0.5, 1);
-  -moz-transition: 0.5s all cubic-bezier(0, 1, 0.5, 1);
-  transition: 0.5s all cubic-bezier(0, 1, 0.5, 1); }
-
-/* line 16, _index.scss */
-.header {
-  max-width: 1400px;
-  padding: 50px;
-  background: white;
-  padding-top: 100px;
-  font-family: 'Source Code Pro', sans-serif; }
-  @media screen and (max-width: 480px) {
-    /* line 16, _index.scss */
-    .header {
-      padding-top: 50px; } }
-  /* line 27, _index.scss */
-  .header h4 {
-    color: #949A9C;
-    font-size: 1em;
-    font-weight: 400; }
-  @media screen and (max-width: 480px) {
-    /* line 16, _index.scss */
-    .header {
-      max-width: 100%;
-      width: 100%;
-      margin: 0; } }
-
-/* line 40, _index.scss */
-.project {
-  margin: 50px 0;
-  padding: 20px 0;
-  border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1; }
-  /* line 46, _index.scss */
-  .project h1 {
-    font-size: 1.2em;
-    padding-top: 10px;
-    margin-bottom: 0;
-    color: #333;
-    font-weight: 400; }
-    @media screen and (max-width: 480px) {
-      /* line 46, _index.scss */
-      .project h1 {
-        padding-top: 0;
-        margin-bottom: 30px; } }
-  /* line 58, _index.scss */
-  .project .subtitle {
-    font-size: 1em;
-    color: #949A9C; }
-  /* line 64, _index.scss */
-  .project a {
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-
 @font-face {
   font-family: Circular;
   src: url(../fonts/CircularStd-Book.otf);
@@ -1055,3 +996,239 @@ body {
   font-family: CircularMedium;
   src: url(../fonts/CircularStd-Medium.otf);
   font-weight: 400; }
+/* line 23, josh.css.scss */
+.josh {
+  height: 100vh;
+  font-family: 'Circular', sans-serif;
+  text-rendering: geometricPrecision;
+  background: url("../images/joshbg3.jpg") no-repeat center center;
+  background-size: cover; }
+  /* line 30, josh.css.scss */
+  .josh .joshbg {
+    width: 1000px;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 3; }
+  /* line 41, josh.css.scss */
+  .josh .joshbg2 {
+    z-index: 1; }
+  /* line 45, josh.css.scss */
+  .josh .picjosh {
+    width: 100px;
+    opacity: 0;
+    position: fixed;
+    z-index: 2;
+    top: 490px;
+    right: 40%;
+    -webkit-transition: 1s all cubic-bezier(0, 1, 0.5, 1);
+    -moz-transition: 1s all cubic-bezier(0, 1, 0.5, 1);
+    transition: 1s all cubic-bezier(0, 1, 0.5, 1); }
+  /* line 55, josh.css.scss */
+  .josh .show {
+    width: 300px;
+    top: 280px;
+    opacity: 1; }
+
+/* line 74, josh.css.scss */
+.button-container {
+  position: relative;
+  width: 100%;
+  top: 710px;
+  text-align: center;
+  width: 100%;
+  z-index: 9999; }
+  /* line 82, josh.css.scss */
+  .button-container .check {
+    border-radius: 500px;
+    background: #fff;
+    border: none;
+    color: #5b7693;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px 30px;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 1s all cubic-bezier(0, 1, 0.5, 1);
+    -moz-transition: 1s all cubic-bezier(0, 1, 0.5, 1);
+    transition: 1s all cubic-bezier(0, 1, 0.5, 1); }
+    /* line 96, josh.css.scss */
+    .button-container .check:hover {
+      transform: translateY(-6px);
+      -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2); }
+
+/* line 108, josh.css.scss */
+#confetti {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  -webkit-transition: 1s all cubic-bezier(0, 1, 0.5, 1);
+  -moz-transition: 1s all cubic-bezier(0, 1, 0.5, 1);
+  transition: 1s all cubic-bezier(0, 1, 0.5, 1); }
+
+/* line 123, josh.css.scss */
+.stage {
+  width: 100%;
+  text-align: left;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  perspective: 9999px;
+  transform-style: preserve-3d;
+  opacity: 0;
+  pointer-events: none; }
+
+/* line 138, josh.css.scss */
+.layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  opacity: 1;
+  animation-fill-mode: forwards;
+  transform: rotateY(10deg) rotateX(13deg) translateZ(0); }
+
+/* line 149, josh.css.scss */
+.layer:after {
+  font: 150px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+  content: 'You Bet!';
+  white-space: pre;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  color: whitesmoke;
+  letter-spacing: -2px;
+  pointer-events: none;
+  text-shadow: 4px 0 10px rgba(0, 0, 0, 0.13); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(1):after {
+  transform: translateZ(0px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(2):after {
+  transform: translateZ(-2px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(3):after {
+  transform: translateZ(-4px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(4):after {
+  transform: translateZ(-6px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(5):after {
+  transform: translateZ(-8px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(6):after {
+  transform: translateZ(-10px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(7):after {
+  transform: translateZ(-12px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(8):after {
+  transform: translateZ(-14px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(9):after {
+  transform: translateZ(-16px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(10):after {
+  transform: translateZ(-18px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(11):after {
+  transform: translateZ(-20px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(12):after {
+  transform: translateZ(-22px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(13):after {
+  transform: translateZ(-24px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(14):after {
+  transform: translateZ(-26px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(15):after {
+  transform: translateZ(-28px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(16):after {
+  transform: translateZ(-30px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(17):after {
+  transform: translateZ(-32px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(18):after {
+  transform: translateZ(-34px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(19):after {
+  transform: translateZ(-36px); }
+
+/* line 167, josh.css.scss */
+.layer:nth-child(20):after {
+  transform: translateZ(-38px); }
+
+/* line 172, josh.css.scss */
+.layer:nth-child(n+10):after {
+  -webkit-text-stroke: 3px rgba(0, 0, 0, 0.25); }
+
+/* line 176, josh.css.scss */
+.layer:nth-child(n+11):after {
+  -webkit-text-stroke: 15px dodgerblue;
+  text-shadow: 6px 0 6px #00366b, 5px 5px 5px #002951, 0 6px 6px #00366b; }
+
+/* line 181, josh.css.scss */
+.layer:nth-child(n+12):after {
+  -webkit-text-stroke: 15px #0077ea; }
+
+/* line 185, josh.css.scss */
+.layer:last-child:after {
+  -webkit-text-stroke: 17px rgba(0, 0, 0, 0.1); }
+
+/* line 189, josh.css.scss */
+.layer:first-child:after {
+  color: #fff;
+  text-shadow: none; }
+
+/* line 199, josh.css.scss */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 50px;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  font-family: 'Circular', sans-serif; }
+
+/* line 209, josh.css.scss */
+footer a {
+  color: white; }
