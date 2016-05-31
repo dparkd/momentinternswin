@@ -408,7 +408,7 @@ document.addEventListener("DOMContentLoaded", function() {
       $('#confetti').css('opacity', '1'); 
     }  else if (currentTime < 16.30) {
       $('.nojosh').addClass('show');
-      $('.status').html('No not yet.');
+      $('.time').html('No not yet.');
     }
 
     $(this).remove();
